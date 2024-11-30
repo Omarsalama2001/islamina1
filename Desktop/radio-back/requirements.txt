@@ -1,4 +1,3 @@
 fastapi
 uvicorn
 pyradios
-dataclasses
