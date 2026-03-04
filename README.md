@@ -20,4 +20,93 @@
 ## 📋 Overview
 
 This is the backend service for **Islamina App** 📱
-It provides a REST API to fetch and stream<span class="ml-2" /><span class="inline-block w-3 h-3 rounded-full bg-neutral-a12 align-middle mb-[0.1rem]" />
+It provides a REST API to fetch and stream **Quran Radio Stations**
+from various Islamic channels around the world.
+
+---
+
+## 🚀 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/` | Get all radio stations |
+
+### Response Example
+```json
+[
+  {
+    "name": "إذاعة القرآن الكريم",
+    "country": "Egypt 🇪🇬",
+    "url": "stream_url"
+  },
+  {
+    "name": "إذاعة القرآن الكريم",
+    "country": "Saudi Arabia 🇸🇦",
+    "url": "stream_url"
+  }
+]
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|-----------|-------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Programming Language |
+| ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) | REST API Framework |
+| ![Uvicorn](https://img.shields.io/badge/Uvicorn-009688?style=flat&logo=gunicorn&logoColor=white) | ASGI Server |
+| ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) | Deployment Platform |
+
+---
+
+## ⚙️ Run Locally
+
+**Step 1:** Clone the repo
+```bash
+git clone https://github.com/Omarsalama2001/islamina_radio_backend
+cd islamina_radio_backend
+```
+
+**Step 2:** Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+**Step 3:** Run the server
+```bash
+uvicorn main:app --reload
+```
+
+**Step 4:** Open in browser
+```
+http://localhost:8000
+```
+
+---
+
+## 📁 Project Structure
+
+```
+📦 islamina_radio_backend
+ ├── 📄 main.py
+ ├── 📄 radio_backend.py
+ ├── 📄 requirements.txt
+ └── 📄 vercel.json
+```
+
+---
+
+## 🔗 Related
+
+> 📱 **Islamina Flutter App:** [islamina_app](https://github.com/Omarsalama2001/islamina_app)
+
+---
+
+## 👨‍💻 Developer
+
+<p align="center">
+  <a href="https://github.com/Omarsalama2001">
+    <img src="https://img.shields.io/badge/GitHub-Omar_Salama-181717?style=for-the-badge&logo=github"/>
+  </a>
+</p>
